@@ -29,8 +29,8 @@ EOF
 DISK_USAGE_BEFORE_CLEANUP=$(df -h)
 
 # Other locales will be removed from the VM
-KEEP_LANGUAGE="en"
-KEEP_LOCALE="en_US"
+KEEP_LANGUAGE="ja"
+KEEP_LOCALE="ja_JP"
 echo "==> Remove unused man page locales"
 pushd /usr/share/man
 if [ $(ls | wc -w) -gt 16 ]; then
